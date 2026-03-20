@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaRoza Video</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      background: #f1f1f1;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #111;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #ccc;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: #ff3d00;
+      color: white;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 240px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .topbar {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .video-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .video-card:hover {
+      transform: scale(1.03);
+    }
+
+    .video-card img {
+      width: 100%;
+    }
+
+    .video-info {
+      padding: 10px;
+    }
+
+    .video-info h4 {
+      margin: 5px 0;
+    }
+
+    .video-info p {
+      font-size: 14px;
+      color: gray;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      color: gray;
+    }
+
+    @media(max-width: 768px) {
+      .sidebar {
+        width: 70px;
+      }
+
+      .sidebar h2 {
+        display: none;
+      }
+
+      .sidebar a {
+        text-align: center;
+        font-size: 12px;
+      }
+
+      .main {
+        margin-left: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>LaRoza</h2>
+  <a href="#">Home</a>
+  <a href="#">Trending</a>
+  <a href="#"><a href="http://565755.shop/">shop</a>
+<a href="http://565756.shop/">shop</a>
+<a href="http://565757.shop/">shop</a></a>
+  </a>
+
+
+<!-- Main Content -->
+<div class="main">
+
+  <div class="topbar">
+    <h3>Latest Videos</h3>
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <div class="videos">
+
+    <div class="video-card">
+      <img src="https://via.placeholder.com/300x180" alt="">
+      <div class="video-info">
+        <h4>Trending Video Title</h4>
+        <p>1M views • 2 days ago</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <img src="https://via.placeholder.com/300x180" alt="">
+      <div class="video-info">
+        <h4>Music Video</h4>
+        <p>500K views • 1 week ago</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <img src="https://via.placeholder.com/300x180" alt="">
+      <div class="video-info">
+        <h4>Movie Trailer</h4>
+        <p>2M views • 3 days ago</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 larozavideo.store
+  </footer>
+
+</div>
+
+</body>
+</html>
